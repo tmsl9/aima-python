@@ -1,9 +1,8 @@
 import agents_ia
-import ws2_ex8
+import ws2_ex8, ws3_ex3
 
 
 if __name__ == '__main__':
     #agents_ia.teste_ReflexVacuumAgent()
-    #ws2_ex8.print_this()
-    ws2_ex8.ex8()
-    #ws2_ex8.ex()
+    #ws2_ex8.main()
+    ws3_ex3.main()

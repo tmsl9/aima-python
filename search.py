@@ -188,6 +188,7 @@ def breadth_first_tree_search(problem):
 
     while frontier:
         node = frontier.popleft()
+        print(node)
         if problem.goal_test(node.state):
             return node
         frontier.extend(node.expand(problem))
@@ -303,6 +304,7 @@ def depth_limited_search(problem, limit=50):
         else:
             cutoff_occurred = False
             for child in node.expand(problem):
+                print(child)
                 result = recursive_dls(child, problem, limit - 1)
                 if result == 'cutoff':
                     cutoff_occurred = True
